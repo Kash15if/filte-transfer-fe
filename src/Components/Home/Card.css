@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; /* Center the filter container */
+    gap: 10px; /* Space between inputs */
+    width: calc(100% - 40px); /* Match card width minus margins */
+    max-width: 800px; /* Max width for the filter container */
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 3; /* Allow the input to grow */
+  }
+  
+  #tagSelect {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 2; /* Allow the select to grow */
+  }
+  
+  #filterButton {
+    padding: 10px;
+    border: none; /* Remove border for the button */
+    border-radius: 4px;
+    flex: 1; /* Allow the button to grow */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #filterButton {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none; /* Remove border for the button */
+  }
+  
+  #filterButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* Full width minus margins */
+    max-width: 800px;
+    margin: 30px auto; /* Center the card with margin */
+    padding: 20px; /* Add padding inside the card */
+    position: relative; /* For positioning the topic tag */
+  }
+  
+  .card-image {
+    width: 20%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 0 20px; /* Padding on left and right */
+    width: 80%;
+    position: relative; /* For positioning the topic tag */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column; /* Stack vertically */
+    }
+  
+    .card-image {
+      width: 100%; /* Image takes full width */
+    }
+  
+    .card-content {
+      width: 100%; /* Content takes full width */
+      padding: 20px 0; /* Adjust padding */
+    }
+  }
+  
+  .topic-tag {
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    font-size: 0.9em;
+  }
+  
